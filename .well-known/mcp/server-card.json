@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "name": "coppa-ferpa-mcp",
+  "version": "1.0.0",
+  "title": "Children's Privacy (COPPA + FERPA)",
+  "description": "COPPA + FERPA + EU AI Act children + UK AADC.",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/meok-ai-labs/coppa-ferpa-mcp",
+  "license": "MIT",
+  "author": {
+    "name": "MEOK AI Labs",
+    "email": "hello@meok.ai",
+    "url": "https://meok.ai"
+  },
+  "categories": [
+    "industry"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-governance",
+    "compliance",
+    "meok"
+  ],
+  "support_url": "https://github.com/meok-ai-labs",
+  "contact_email": "hello@meok.ai",
+  "endpoints": {
+    "free_tier": {
+      "calls_per_day": 10
+    },
+    "pro": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836",
+    "enterprise": "hello@meok.ai"
+  }
+}

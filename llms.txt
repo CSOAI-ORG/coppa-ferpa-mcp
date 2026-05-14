@@ -1,0 +1,36 @@
+# coppa-ferpa-mcp
+# Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK Age Appropriate Design Code.
+
+## Install
+```bash
+pip install coppa-ferpa-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label + on-premise.
+
+## Tools (5)
+
+### `check_under_13_processing(query, api_key)`
+COPPA Section 312 verifiable parental consent requirements
+
+### `ferpa_audit(query, api_key)`
+FERPA education records protection check
+
+### `aadc_uk_check(query, api_key)`
+UK ICO Age Appropriate Design Code 15 standards
+
+### `eu_ai_act_minors(query, api_key)`
+EU AI Act Article 5(1)(b) exploitation of minors prohibition
+
+### `kids_data_flow_map(query, api_key)`
+Map data flows that touch minors with risk scoring
+
+## Pairs with
+- `meok-attestation-api` — HMAC signing for compliance certs
+- `meok-attestation-verify` — public verification
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT

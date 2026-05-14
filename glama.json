@@ -1,0 +1,38 @@
+{
+  "name": "coppa-ferpa-mcp",
+  "title": "Children's Privacy (COPPA + FERPA)",
+  "description": "COPPA + FERPA + EU AI Act children + UK AADC.",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/meok-ai-labs/coppa-ferpa-mcp",
+  "license": "MIT",
+  "author": "MEOK AI Labs",
+  "tags": [
+    "industry",
+    "mcp",
+    "governance"
+  ],
+  "category": "industry",
+  "icon": "https://meok.ai/favicon.ico",
+  "pricing": {
+    "free": {
+      "calls_per_day": 10,
+      "description": "Free tier, no API key"
+    },
+    "pro": {
+      "monthly_gbp": 79,
+      "description": "Unlimited + signed attestations",
+      "checkout_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"
+    },
+    "enterprise": {
+      "monthly_gbp": 1499,
+      "description": "White-label + on-premise",
+      "contact": "hello@meok.ai"
+    }
+  },
+  "install": {
+    "pip": "pip install coppa-ferpa-mcp",
+    "npm_setup": "npx meok-setup --pack governance"
+  },
+  "verify_url": "https://meok-attestation-api.vercel.app/verify",
+  "support": "hello@meok.ai"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/coppa-ferpa-mcp",
+  "version": "1.0.0",
+  "description": "Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK A...",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/coppa-ferpa-mcp",
+    "source": "https://github.com/CSOAI-ORG/coppa-ferpa-mcp"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "coppa-ferpa-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
