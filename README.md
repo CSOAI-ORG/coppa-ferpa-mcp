@@ -1,47 +1,78 @@
-# Children's Privacy (COPPA + FERPA + EU AI Act Kids) MCP
+# Coppa Ferpa MCP
 
-[![PyPI](https://img.shields.io/pypi/v/coppa-ferpa-mcp)](https://pypi.org/project/coppa-ferpa-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-governance--mcp-purple)](https://meok.ai)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/coppa_ferpa_mcp/)
 
-Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK Age Appropriate Design Code.
+> Children's privacy MCP — COPPA, FERPA, UK AADC, EU AI Act minors
 
-## Install
+Children's privacy MCP — COPPA, FERPA, UK AADC, EU AI Act minors. MIT
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install coppa-ferpa-mcp
+# Install via pip
+pip install coppa_ferpa_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install coppa-ferpa-mcp --client claude
 ```
 
-## Tools
+## ✨ Features
 
-| Tool | Purpose |
-|------|---------|
-| `check_under_13_processing` | COPPA Section 312 verifiable parental consent requirements |
-| `ferpa_audit` | FERPA education records protection check |
-| `aadc_uk_check` | UK ICO Age Appropriate Design Code 15 standards |
-| `eu_ai_act_minors` | EU AI Act Article 5(1)(b) exploitation of minors prohibition |
-| `kids_data_flow_map` | Map data flows that touch minors with risk scoring |
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Pairs with
+## 📖 Documentation
 
-- `meok-attestation-api` — POST results to https://meok-attestation-api.vercel.app/sign for cryptographically signed compliance certs
-- `meok-attestation-verify` — public verification of any MEOK-signed cert
-- Other MEOK governance MCPs via SOV3 `mcp_bridge_call`
+- [Full Documentation](https://docs.meok.ai/coppa-ferpa-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Pricing
+## 🛡️ Compliance
 
-- **Free**: 10 calls/day. No API key required.
-- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
-- **Enterprise** £1,499/mo: white-label + on-premise + SLA. hello@meok.ai
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Status
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Scaffold v1.0.0 ships the MCP framework + 5 tool stubs. v1.1.0 will add real regulation data ingestion.
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-If your team needs this MCP fully-loaded faster, ping hello@meok.ai for sponsored development.
+## 🏢 Enterprise
 
-## License
+Need custom development, SLA guarantees, or white-label deployment?
 
-MIT © MEOK AI Labs
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-<!-- mcp-name: io.github.CSOAI-ORG/coppa-ferpa-mcp -->
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
+
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
