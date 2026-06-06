@@ -13,22 +13,6 @@
   ],
   "category": "industry",
   "icon": "https://meok.ai/favicon.ico",
-  "pricing": {
-    "free": {
-      "calls_per_day": 10,
-      "description": "Free tier, no API key"
-    },
-    "pro": {
-      "monthly_gbp": 79,
-      "description": "Unlimited + signed attestations",
-      "checkout_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"
-    },
-    "enterprise": {
-      "monthly_gbp": 1499,
-      "description": "White-label + on-premise",
-      "contact": "hello@meok.ai"
-    }
-  },
   "install": {
     "pip": "pip install coppa-ferpa-mcp",
     "npm_setup": "npx meok-setup --pack governance"

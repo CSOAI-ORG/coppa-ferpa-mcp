@@ -1,6 +1,20 @@
 # Coppa Ferpa MCP
 
 > **⚖️ Built by [MEOK AI Labs](https://meok.ai) / [CSOAI](https://csoai.org).** Need this applied to _your_ system fast? Book a 30-min Founder Office Hour (£29) → **https://meok.ai/work** · Full governance platform → **https://meok.ai**
+mcp-name: io.github.CSOAI-ORG/coppa-ferpa-mcp
+
+# Children's Privacy (COPPA + FERPA + EU AI Act Kids) MCP
+
+
+> ## Buy Starter — £29/mo
+> **Signed attestations + unlimited audits + email support.**
+> 👉 **[Subscribe at meok.ai](https://buy.stripe.com/28EfZj6WgfZ03818iA8k907)** — instant HMAC signing key + Stripe-managed billing.
+>
+> Free tier remains MIT-licensed and zero-config. Upgrade only when you need signed compliance artefacts for audit.
+
+[![PyPI](https://img.shields.io/pypi/v/coppa-ferpa-mcp)](https://pypi.org/project/coppa-ferpa-mcp/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-governance--mcp-purple)](https://meok.ai)
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -40,6 +54,9 @@ npx -y @smithery/cli@latest install coppa-ferpa-mcp --client claude
 ## 🛡️ Compliance
 
 This MCP server is built with **EU AI Act compliance** built-in:
+- **Free**: 10 calls/day. No API key required.
+- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K)
+- **Enterprise** £1,499/mo: white-label + on-premise + SLA. hello@meok.ai
 
 - ✅ Article 9 — Risk Management System
 - ✅ Article 13 — Transparency & Instructions for Use
@@ -78,3 +95,44 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 <p align="center">
   <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
 </p>
+<!-- mcp-name: io.github.CSOAI-ORG/coppa-ferpa-mcp -->
+
+<!-- BUY-LADDER:START -->
+
+## 💸 Try MEOK in 30 seconds — instant buy ladder
+
+| Tier | Price | What you get | Stripe |
+|---|---|---|---|
+| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
+| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
+| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+
+> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
+> Verify any signed report at <https://meok.ai/verify>.
+
+<!-- BUY-LADDER:END -->
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "coppa-ferpa-mcp": {
+      "command": "uvx",
+      "args": ["coppa-ferpa-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install coppa-ferpa-mcp` then run the `coppa-ferpa-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `check_under_13_processing` to …"
+- "Use `ferpa_audit` to …"
+- "Use `aadc_uk_check` to …"

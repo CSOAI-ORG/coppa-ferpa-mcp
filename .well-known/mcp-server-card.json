@@ -1,0 +1,34 @@
+{
+  "name": "coppa-ferpa-mcp",
+  "title": "Coppa Ferpa Mcp",
+  "description": "Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK Age Appropriate Design Code.",
+  "version": "1.0.3",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "check_under_13_processing"
+    },
+    {
+      "name": "ferpa_audit"
+    },
+    {
+      "name": "aadc_uk_check"
+    },
+    {
+      "name": "eu_ai_act_minors"
+    },
+    {
+      "name": "kids_data_flow_map"
+    },
+    {
+      "name": "search_regulation"
+    },
+    {
+      "name": "list_regulations_in_db"
+    }
+  ]
+}

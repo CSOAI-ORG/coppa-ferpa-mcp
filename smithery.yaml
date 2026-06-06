@@ -1,0 +1,33 @@
+name: coppa-ferpa-mcp
+description: 'MCP server: coppa-ferpa-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/coppa-ferpa-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: check_under_13_processing
+  description: COPPA Section 312 verifiable parental consent requirements
+- name: ferpa_audit
+  description: FERPA education records protection check
+- name: aadc_uk_check
+  description: UK ICO Age Appropriate Design Code 15 standards
+- name: eu_ai_act_minors
+  description: EU AI Act Article 5(1)(b) exploitation of minors prohibition
+- name: kids_data_flow_map
+  description: Map data flows that touch minors with risk scoring
+- name: search_regulation
+  description: Full-text search across 410+ articles of real EU regulation text (EUR-Lex
+    verified).
+- name: list_regulations_in_db
+  description: List all regulations in the local EUR-Lex FTS5 database.
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

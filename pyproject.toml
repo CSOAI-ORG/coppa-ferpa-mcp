@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "coppa-ferpa-mcp"
-version = "1.0.0"
+readme = "README.md"
+version = "1.0.3"
 description = "Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK Age Appropriate Design Code."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
@@ -20,7 +21,7 @@ dependencies = ["mcp>=1.0.0"]
 
 [project.urls]
 Homepage = "https://meok.ai"
-Repository = "https://github.com/meok-ai-labs/coppa-ferpa-mcp"
+Repository = "https://github.com/CSOAI-ORG/coppa-ferpa-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
