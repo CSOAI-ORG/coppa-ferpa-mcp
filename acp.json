@@ -1,0 +1,25 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "coppa-ferpa-mcp",
+    "description": "Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK A...",
+    "version": "1.0.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "coppa-ferpa-mcp"
+      }
+    ],
+    "capabilities": [
+      "check_under_13_processing",
+      "ferpa_audit",
+      "aadc_uk_check",
+      "eu_ai_act_minors",
+      "kids_data_flow_map",
+      "search_regulation",
+      "list_regulations_in_db"
+    ]
+  }
+}
