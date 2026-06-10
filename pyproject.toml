@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "coppa-ferpa-mcp"
 readme = "README.md"
-version = "1.0.3"
+version = "1.0.6"
 description = "Children's privacy compliance: COPPA (US), FERPA (US edu), EU AI Act children's provisions, UK Age Appropriate Design Code."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
