@@ -3,7 +3,7 @@ description: 'MCP server: coppa-ferpa-mcp'
 version: 1.0.5
 author: MEOK AI Labs
 homepage: https://safetyof.ai
-repository: https://github.com/MEOK-AI-Labs/coppa-ferpa-mcp
+repository: https://github.com/CSOAI-ORG/coppa-ferpa-mcp
 license: MIT
 categories:
 - compliance
