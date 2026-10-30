@@ -25,6 +25,9 @@ jobs:
       - name: Verify server.py parses
         run: python -c "import ast; ast.parse(open('server.py').read()); print('OK')"
 
+      - name: Check README against source (blocking)
+        run: python tests/test_readme_contract.py
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
