@@ -1,140 +1,111 @@
-[![MCP Scorecard: 90/100](https://img.shields.io/badge/proofof.ai-90%2F100-5b21b6)](https://proofof.ai/scorecard/coppa-ferpa-mcp.html)
+# Children's privacy MCP — implementation status
 
-# Coppa Ferpa MCP
+Maintained in the Council of AI / CSOAI Ltd ecosystem. The package and repository
+identifier remain `coppa-ferpa-mcp`; existing MIT copyright notices are preserved.
 
-> **⚖️ Built by [MEOK AI Labs](https://meok.ai) / [CSOAI](https://csoai.org).** Need this applied to _your_ system fast? Book a 30-min Founder Office Hour (£29) → **https://meok.ai/work** · Full governance platform → **https://meok.ai**
-mcp-name: io.github.CSOAI-ORG/coppa-ferpa-mcp
+**This repository contains an early scaffold, not a production compliance assessor.**
+Five named assessment tools currently return `status: "stub"` with empty
+`regulation_refs`. Installing or calling them does not establish legal compliance,
+certification, a completed audit, or suitability for processing children's data.
+Measurement and verification are not certification. This is not legal advice.
 
-# Children's Privacy (COPPA + FERPA + EU AI Act Kids) MCP
-
-
-> ## Buy Starter — £29/mo
-> **Signed attestations + unlimited audits + email support.**
-> 👉 **[Subscribe at meok.ai](https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t)** — instant HMAC signing key + Stripe-managed billing.
->
-> Free tier remains MIT-licensed and zero-config. Upgrade only when you need signed compliance artefacts for audit.
-
-[![PyPI](https://img.shields.io/pypi/v/coppa-ferpa-mcp)](https://pypi.org/project/coppa-ferpa-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-governance--mcp-purple)](https://meok.ai)
-
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
-[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/coppa_ferpa_mcp/)
-
-> Children's privacy MCP — COPPA, FERPA, UK AADC, EU AI Act minors
-
-Children's privacy MCP — COPPA, FERPA, UK AADC, EU AI Act minors. MIT
-
----
-
-## 🚀 Quick Start
-
-```bash
-# Install via pip
-pip install coppa_ferpa_mcp
-
-# Or install via Smithery
-npx -y @smithery/cli@latest install coppa-ferpa-mcp --client claude
-```
-
-## ✨ Features
-
-- MCP protocol compliant
-- Easy installation
-- Well-documented API
-- Production-ready
-- Active maintenance
-
-## 📖 Documentation
-
-- [Full Documentation](https://docs.meok.ai/coppa-ferpa-mcp)
-- [API Reference](https://api.meok.ai)
-- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
-
-## 🛡️ Compliance
-
-This MCP server is built with **EU AI Act compliance** built-in:
-- **Free**: 10 calls/day. No API key required.
-- **Pro** £79/mo: unlimited + signed attestations. [Subscribe](https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t)
-- **Enterprise** £1,499/mo: white-label + on-premise + SLA. hello@meok.ai
-
-- ✅ Article 9 — Risk Management System
-- ✅ Article 13 — Transparency & Instructions for Use
-- ✅ Article 15 — Bias Detection & Testing
-- ✅ Article 26 — FRIA Support (where applicable)
-- ✅ Article 50 — AI Content Watermarking (where applicable)
-
-Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
-
-## 🏢 Enterprise
-
-Need custom development, SLA guarantees, or white-label deployment?
-
-- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
-- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
-
-[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
-
-## 🤝 Part of the MEOK Ecosystem
-
-This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
-
-| Domain | Purpose |
-|--------|---------|
-| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
-| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
-| [meok.ai](https://meok.ai) | Sovereign AI platform |
-| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
-
-## 📜 License
-
-MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
-
----
-
-<p align="center">
-  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
-</p>
 <!-- mcp-name: io.github.CSOAI-ORG/coppa-ferpa-mcp -->
 
-<!-- BUY-LADDER:START -->
+## What the source implements
 
-## 💸 Try MEOK in 30 seconds — instant buy ladder
+| Tool | Current source behaviour |
+| --- | --- |
+| `check_under_13_processing` | Returns a scaffold response, not a parental-consent determination. |
+| `ferpa_audit` | Returns a scaffold response, not an education-records audit. |
+| `aadc_uk_check` | Returns a scaffold response, not an assessment against the UK design code. |
+| `eu_ai_act_minors` | Returns a scaffold response, not a legal assessment. |
+| `kids_data_flow_map` | Returns a scaffold response, not an observed data-flow map or validated risk score. |
+| `search_regulation` | Searches a separately configured local SQLite FTS5 database; reports an error when it is unavailable. |
+| `list_regulations_in_db` | Reads metadata from that same optional local database; reports its absence explicitly. |
 
-| Tier | Price | What you get | Stripe |
-|---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t> |
+See [server.py](server.py) for the implementation. Tool names describe intended
+areas of work; they are not evidence that those assessments are implemented.
+A snippet retrieved from a database is not proof of completeness, legal currency,
+or applicability to a particular organisation.
 
-> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
-> Verify any signed report at <https://meok.ai/verify>.
+## Package interface
 
-<!-- BUY-LADDER:END -->
+[pyproject.toml](pyproject.toml) declares Python 3.10 or newer and the command-line
+entry point `coppa-ferpa-mcp = "server:main"`. The source uses MCP over stdio.
+The existing package installation interface is:
 
+```bash
+python -m pip install coppa-ferpa-mcp
+```
 
-## Configuration
-
-Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+Example client configuration:
 
 ```json
 {
   "mcpServers": {
     "coppa-ferpa-mcp": {
-      "command": "uvx",
-      "args": ["coppa-ferpa-mcp"]
+      "command": "coppa-ferpa-mcp"
     }
   }
 }
 ```
 
-Or: `pip install coppa-ferpa-mcp` then run the `coppa-ferpa-mcp` command (stdio transport).
+Review the installed package version, dependencies and local configuration first.
+This documentation correction does not establish a successful current package
+installation, runtime acceptance, or a new package release.
 
-## Examples
+## Data, network and storage boundaries
 
-Once configured, ask your assistant, for example:
-- "Use `check_under_13_processing` to …"
-- "Use `ferpa_audit` to …"
-- "Use `aadc_uk_check` to …"
+Do not provide children's personal data, student records, production credentials
+or other sensitive inputs to this scaffold.
+
+The optional regulation database is **not bundled** by the declared wheel file
+list, which includes `server.py`. `MEOK_EURLEX_DB` can identify a separately
+provisioned database. This README does not promise a database, a live sync, any
+article count, or that its contents are current.
+
+The source attempts to load shared authentication code from an installation-specific
+location. Its available behaviour can depend on that environment and may maintain
+local usage and API-key records. No universal free quota is promised here.
+
+`server.py` also defines an HTTP metering helper for
+`https://proofof.ai/verify`: if invoked, it submits an `api_key` and a `tool` field
+(the latter is empty in the inspected helper). The five scaffold tool bodies do
+not invoke that helper directly. Do not infer that all deployments are offline
+or network-isolated from use of stdio.
+
+Legacy runtime responses can still contain promotional text and signing links.
+Those strings are not evidence that the promised service is active, that a
+signature establishes compliance, or that a displayed price is authoritative.
+This documentation-only correction does not alter tool execution, authentication,
+rate limiting, billing, signing or published package bytes.
+
+## Current commercial information
+
+Earlier README revisions contained conflicting subscription prices and unverified
+promises of unlimited audits, instant signing, service levels and refunds. Those
+promotional claims and direct checkout links have been removed from this README.
+No replacement subscription, new price, or automated signing offer is made here.
+
+For separately scoped measurement or evidence work, use the current service and
+contact information at [Council of AI](https://councilof.ai/). Agree the exact
+scope, deliverable, limitations and commercial terms before any paid work. There
+is no purchase required by this README to inspect the repository's MIT-licensed code.
+
+## Documentation checks
+
+Run the source-only documentation checks without installing or importing the server:
+
+```bash
+python3 tests/test_readme_contract.py
+```
+
+These check the description against the source and reject reintroduced pricing or
+blanket compliance claims. They do not test legal correctness, server execution,
+network behaviour or independent customer use.
+
+## Licence
+
+[MIT](LICENSE), copyright 2026 MEOK AI Labs, as recorded in the unchanged licence.
+The package identifier, licence, historical commits and tool implementation are
+unchanged. Council of AI is operated by CSOAI Ltd.
